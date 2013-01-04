@@ -1,0 +1,8 @@
+#!/bin/sh
+exiftool \
+  -GPSLatitude='' \
+  -GPSLongitude='' \
+  -GPSImgDirection='' \
+  -GPSAltitude='' \
+  -overwrite_original \
+  $1
