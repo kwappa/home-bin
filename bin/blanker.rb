@@ -9,6 +9,6 @@ end
 
 File.open(file_name) { |f|
   while line = f.gets
-    puts line.gsub(/href(.+?)>/, %q{href\1 target="_blank">})
+    puts line.gsub(/href(.+?)>/, %q{href\1 target="_blank" rel="noopener noreferrer">})
   end
 }
